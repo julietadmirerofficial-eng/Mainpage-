@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juliet Admirer | Product-Based IT Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111111;
+      --accent:#e10600;
+      --card:#f5f5f5;
+    }
+    body.dark{
+      --bg:#0b0b0b;
+      --text:#ffffff;
+      --card:#151515;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:var(--bg);color:var(--text);transition:.3s}
+    header{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative}
+    nav{position:absolute;top:20px;left:20px;right:20px;display:flex;justify-content:space-between;align-items:center}
+    .logo{width:10px;height:10px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.2rem}
+    .logo img {padding: auto; border-radius: 50%; height: 1200%;; }
+    .dots{font-size:2rem;cursor:pointer}
+    .hero{text-align:center}
+    .hero h1{font-size:3.2rem}
+    .hero span{color:var(--accent)}
+    section{padding:80px 10%}
+    .section-title{text-align:center;font-size:2.3rem;margin-bottom:50px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+    .card{background:var(--card);padding:30px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
+    .choice{cursor:pointer;text-align:center;font-weight:600}
+    footer{background:#000;color:#fff;text-align:center;padding:30px}
+    .toggle{position:fixed;bottom:20px;right:20px;padding:10px 15px;border:none;border-radius:20px;background:var(--accent);color:#fff;cursor:pointer}
+    a{text-decoration:none;color:inherit}
+  </style>
+</head>
+<body><header id="home">
+  <nav>
+    <div class="logo"><img src="main.png" alt=""></div>
+    <div class="dots">⋮</div>
+  </nav>
+  <div class="hero">
+    <h1>Juliet <span>Admirer</span></h1>
+    <p>Product-driven IT innovation company</p>
+  </div>
+</header><section id="about">
+  <h2 class="section-title">About Us</h2>
+  <div class="grid">
+    <div class="card"> <b>Our Story</b><br>Juliet Admirer started with a vision to blend creativity, technology and passion into world‑class digital products.</div>
+    <div class="card"> <b>Vision</b><br>To become a global product‑based IT company creating meaningful impact.</div>
+    <div class="card"> <b>Mission</b><br>Build scalable, innovative and future‑ready digital solutions.</div>
+  </div>
+</section><section id="services-products">
+  <h2 class="section-title">Services & Products</h2>
+  <div class="grid">
+    <a href="service.html" class="card choice">Service Company<br><small>Click to view services</small></a>
+    <a href="product.html" class="card choice">Product Company<br><small>Click to view products</small></a>
+  </div>
+</section><section id="why">
+  <h2 class="section-title">Why Choose Us</h2>
+  <div class="grid">
+    <div class="card">Product-first mindset</div>
+    <div class="card">AI & modern tech stack</div>
+    <div class="card">Creative + technical excellence</div>
+    <div class="card">Trusted by multiple clients</div>
+  </div>
+</section><section id="team">
+  <h2 class="section-title">Our Team</h2>
+  <div class="grid">
+    <div class="card"><b>Jagathish</b><br>CEO<br>B.Tech AI & DS</div>
+  </div>
+</section><section id="projects">
+  <h2 class="section-title">Our Projects</h2>
+  <div class="grid">
+    <div class="card">50+ Projects Successfully Completed</div>
+  </div>
+</section><section id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="grid">
+    <div class="card">Gmail: julietadmirer.official@gmail.com</div>
+    <div class="card">Instagram: @juliet_admirer.official</div>
+    <div class="card">LinkedIn: Juliet Admirer</div>
+  </div>
+</section><footer>
+  © 2025 Juliet Admirer | All Rights Reserved
+</footer><button class="toggle" onclick="document.body.classList.toggle('dark')">Theme</button>
+
+</body>
+</html>

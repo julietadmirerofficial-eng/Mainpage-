@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juliet Admirer | Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111111;
+      --accent:#e10600;
+      --card:#f5f5f5;
+    }
+    body.dark{
+      --bg:#0b0b0b;
+      --text:#ffffff;
+      --card:#151515;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:var(--bg);color:var(--text);transition:.3s}
+    header{padding:40px 10%;display:flex;justify-content:space-between;align-items:center}
+    .logo{width:55px;height:55px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+    a{text-decoration:none;color:inherit}
+    .hero{text-align:center;padding:60px 10%}
+    .hero h1{font-size:3rem}
+    .hero span{color:var(--accent)}
+    section{padding:60px 10%}
+    .logo img {padding: auto; border-radius: 50%; height: 200%;; }
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+    .card{background:var(--card);padding:30px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
+    footer{background:#000;color:#fff;text-align:center;padding:25px}
+    .toggle{position:fixed;bottom:20px;right:20px;padding:10px 15px;border:none;border-radius:20px;background:var(--accent);color:#fff;cursor:pointer}
+  </style>
+</head>
+<body><header>
+  <div style="display:flex;justify-content:space-between;align-items:center;width:100%">
+    <a href="index.html" class="logo"><img src="serv.png" alt=""></a>
+    
+    <nav style="display:flex;gap:25px;font-weight:500">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="service.html"><b>Services</b></a>
+      <a href="product.html">Products</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header><div class="hero">
+  <h1>Our <span>Services</span></h1>
+  <p>We deliver powerful IT services that help businesses grow digitally</p>
+</div><section>
+  <div class="grid">
+    <div class="card"><b>Web Development</b><br>portfolio </div>
+    <div class="card"><b>digital marketing</b><br>SEO , content creation, google ads </div>
+    <div class="card"><b>cloud service</b><br>website hosting  </div>
+
+  </div>
+</section>
+</section><section id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="grid">
+    <div class="card">Gmail: julietadmirer.official@gmail.com</div>
+    <div class="card">Instagram: @juliet_admirer.official</div>
+    <div class="card">LinkedIn: Juliet Admirer</div>
+  </div>
+</section><footer>
+  © 2025 Juliet Admirer Services | Powered by Juliet Admirer
+</footer><button class="toggle" onclick="document.body.classList.toggle('dark')">Theme</button>
+
+</body>
+</html>

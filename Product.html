@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juliet Admirer | Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111111;
+      --accent:#e10600;
+      --card:#f5f5f5;
+    }
+    body.dark{
+      --bg:#0b0b0b;
+      --text:#ffffff;
+      --card:#151515;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:var(--bg);color:var(--text);transition:.3s}header{padding:30px 10%;display:flex;justify-content:space-between;align-items:center}
+.logo{width:55px;height:55px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+nav{display:flex;gap:25px;font-weight:500}
+.logo img {padding: auto; border-radius: 50%; height: 200%;; }
+nav a{text-decoration:none;color:inherit}
+nav a.active{color:var(--accent);font-weight:700}
+
+.hero{text-align:center;padding:60px 10%}
+.hero h1{font-size:3rem}
+.hero span{color:var(--accent)}
+.hero p{margin-top:10px}
+
+section{padding:60px 10%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.card{background:var(--card);padding:30px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.1);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+
+.tag{display:inline-block;padding:5px 12px;border-radius:20px;background:var(--accent);color:#fff;font-size:.75rem;margin-bottom:10px}
+
+footer{background:#000;color:#fff;text-align:center;padding:25px}
+
+.toggle{position:fixed;bottom:20px;right:20px;padding:10px 15px;border:none;border-radius:20px;background:var(--accent);color:#fff;cursor:pointer}
+
+  </style>
+</head>
+<body><header>
+  <div class="logo"><img src="pro.png" alt=""></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="service.html">Services</a>
+    <a href="product.html" class="active">Products</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header><div class="hero">
+  <h1>Our <span>Products</span></h1>
+  <p>Innovative digital products built for the future</p>
+</div><section>
+  <div class="grid"><div class="card">
+  <span class="tag">AI Product</span>
+  <h3>Emotion & Sentiment Analyzer</h3>
+  <p>AI-powered system to analyze emotions and sentiments from social media content.</p>
+</div>
+
+<div class="card">
+  <span class="tag">Web App</span>
+  <h3>Social Media Platform</h3>
+  <p>Full-featured social platform with profiles, posts, chat and analytics.</p>
+</div>
+
+<div class="card">
+  <span class="tag">AI Tool</span>
+  <h3>Caption & Hashtag Generator</h3>
+  <p>Smart AI tool that generates trending captions and hashtags.</p>
+</div>
+
+<div class="card">
+  <span class="tag">Automation</span>
+  <h3>Business Automation Suite</h3>
+  <p>Automates daily business operations and workflows.</p>
+</div>
+
+<div class="card">
+  <span class="tag">Education</span>
+  <h3>Online Learning Platform</h3>
+  <p>Interactive learning platform with tests, analytics and progress tracking.</p>
+</div>
+
+<div class="card">
+  <span class="tag">Custom</span>
+  <h3>Client Custom Products</h3>
+  <p>Tailor-made products designed for client-specific needs.</p>
+</div>
+
+  </div>
+</section><footer>
+  © 2025 Juliet Admirer Products | Innovating the Future
+</footer><button class="toggle" onclick="document.body.classList.toggle('dark')">Theme</button>
+
+</body>
+</html>
